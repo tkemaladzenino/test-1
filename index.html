@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html Lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter-1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        var masivi1 = ["1.დაასახელეთ ყველაზე ჯენტლმენი პროგრამისტი, რომელმაც 8 მარტს ქალ პროგრამისტებს საკუთარი ვებ-გვერდი აჩუქა ყვავილების ფართო ასორტიმენტით.",
+            "2.	გამოიცანით სავიზიტო ბარათის მფლობელი და ამავდროულად ყველაზე გრძელი პოსტების ავტორი  პროგრამისტი.",
+            "3. გამოიცანით  ყველაზე მეგობრული, აქტიური, უდიდესი მოტივატორი და ნიჭიერი პროგრამისტი chapter1-ში.",
+            "4. რა ქვია ფრინველს, რომლის ცრემლებიც  უნდა დაგვალევინოს ავთანდილმა?",
+            "5.	გამოიცანით იუმორის  დედოფალი, ასტროლოგი, ლამაზი სუვენირების და ხელჩანთების შემქმნელი, სერიალების მოყვარული, ბანკირი, უნიჭიერესი მოთხრობების <br>ავტორი და გრინ კარტაზე მეოცნებე ქალი პროგრამისტი.",
+            "6.	ვის ეკუთვნის ცნობილი გამოთქმა: პროგრამირებამ როგორ უნდა გაჯობოს ჰა? (ამ შემთხვევაში მიუთითეთ მხოლოდ სახელი)",
+            "7.	გამოიცანით ქალი პროგრამისტი ‘შენი ლამაზი თვალების ჭირიმე’,  რომელსაც  უყვარს ფეხბურთის ყურების დროს  ლუდის დალევა.",
+            "8.	ვინ არის ყველაზე სწრაფი პროგრამისტი, რომელმაც ყველაზე ადრე მიაღწია  პირველ წარმატებას  ამ გუნდში",
+            "9.	ყველაზე მოუსვენარი, ყველაზე ცნობიმოყვარე და უბევრესი კითხვების ინიციატორი  (ამ შემთხვევაში მიუთითეთ მხოლოდ გვარი).",
+            "10.გამოიცანით წარმატებული  პროგრამისტი, რომელიც სხვა ჩაფტერიდან შემოგვიერთდა და ელვის სისწრაფით დაწინაურდა. ",
+            "11.ვინ არის ის ადამიანი, რომლის  სიმშვიდეს   დღე და ღამე შენატრის ნანა ხუციშვილი ",
+            "12.ყველაზე მიზანდასახული და შრომისმოყვარე პროგრამისტი ქალი, რომელიც სხვაგანაც ეუფლებოდა პროგრამირებას, მაგრამ მხოლოდ აქ შეძლო უდიდესი წარმატებისთვის მიეღწია.",
+            "13.რომელ უმშვენიერეს პროგრამისტ ქალს ჰყავს ფიტნეს-ინსტრუქტორი და აქტიურად ვარჯიშობს.",
+            "14.რომელ პროგრამისტ ქალს  უყვარს ყველაზე მეტად ჰორორები?",
+            "15. როგორი ქათამი უნდა დაგვიკლას ნანამ სვირში ავთანდილის აზრით",
+            "16.რომელმა პროგრამისტმა ქალმა აღიარა გულახდილად ერთხელ  ტრენინგზე , რომ დავითის საუბარი მასზე იავნანასავით მოქმედებდა და  მის ხმაზე ეძინებოდა. (მიუთითეთ მხოლოდ სახელი)",];
+
+        var masivi2 = ["ზურა ჩუბინიძე", "ლუკა ტაბატაძე", "ავთანდილ საგინაშვილი", "ბულბული", "ნანა ხუციშვილი", "ავთანდილი",
+            "ნაირა ღვალაძე", "ნიკა აბაშიშვილი", "საგინაშვილი", "დიმიტრი ყვარელაშვილი", "დავით ჭეჭელაშვილი", "ქეთევან ცისკაძე",
+            "ნინი ტაბატაძე", "ცირა ოთარაშვილი", "უიღბლო", "ნანა",];
+
+        let pasuxebi = [];
+
+        var zero = 0;
+        var zero2 = 0;
+        var zero3 = 0;
+        var question1 = masivi1[length++];
+        var answers = masivi2[zero++];
+        var swori = 0;
+
+
+        function question() {
+
+            var f = document.getElementById("onclick");
+            question1 = masivi1[zero3++];
+            answers = masivi2[zero2++];
+            if (f == onclick) {
+                document.getElementById('rezultati').innerHTML = '';
+                document.getElementById('rezultati2').innerHTML = '';
+                axalikitxva.innerHTML = question1;
+
+            }
+            if (answers == undefined) {
+                axalikitxva4.innerHTML = "სწორი პასუხების რაოდენობა" + " " + swori;
+                axalikitxva.innerHTML = " ტესტი დასრულდა ";
+            }
+        }
+
+        function answ() {
+            var x = document.getElementById("messige").value;
+            if (x == answers && !pasuxebi.includes(answers)) {
+                pasuxebi.push(answers);
+                swori++;
+                rezultati.innerHTML = "სწორია პასუხია";
+                rezultati.style.color = "green";
+                axalikitxva4.innerHTML = "სწორი პასუხების რაოდენობა" + " " + swori;
+                axalikitxva4.style.color = "blue";
+            }
+
+            if (x != answers) {
+                rezultati2.innerHTML = "პასუხი არასწორია, არ გეპატიება :), კიდევ იფიქრე ან გადადი შემდეგ კითხვაზე";
+                rezultati2.style.color = "red";
+            }
+        }
+
+    </script>
+
+</head>
+
+<body style="padding-top: 50px; padding-left: 50px;">
+    <div class="container">
+        <div class="col-md-6 col-12">
+            <div class="row">
+                <h5>რამდენად იცნობთ chapter1-ები ერთმანეთს</h5>
+                <div class="gg" id="asd" style=" padding-left: 50px; padding-top: 50px; ">
+                    <form id="asd" style="display: flex; flex-direction: row; gap: 30px;">
+                        <input type=" text" placeholder=" ჩაწერეთ სწორი პასუხი (სახელი გვარი)" id="messige"
+                            style="width: 360px; height: 40px; border-radius: 10px;;"><br><br>
+                        <input type="reset" class="btn btn-warning"
+                            style=" background-color: rgb(52, 198, 52); color: white; width: 90px;">
+
+                    </form><br><br>
+
+                    <button onclick="question()"
+                        style="margin-left: 30px; background-color: rgb(120, 27, 234); color: white;
+                                                                            border: none; height: 50px; border-radius: 10px;">
+                        შეკითხვა</button>
+
+                    <button onclick="answ()"
+                        style="background-color:chocolate; height: 50px; margin-left: 30px;color: white; border: none; border-radius: 10px;">დადასტურება</button>
+
+                    <p id="axalikitxva"></p>
+                    <p id="rezultati"></p>
+                    <p id="axalikitxva4"></p>
+                    <p id="rezultati2"></p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
